@@ -1,0 +1,7 @@
+<!--Text color selector based on primary color plus a custom disabled color-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false"
+          android:alpha="?android:disabledAlpha"
+          android:color="@color/demoDisabledTextColor" />
+    <item android:color="?android:textColorPrimary" />
+</selector>

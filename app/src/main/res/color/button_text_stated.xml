@@ -1,0 +1,11 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+    Different disabled color just for demo purposes.
+    In real project you might want to use "colorPrimaryTextOnLight" + disabled alpha for the disabeled state
+    -->
+    <item android:state_enabled="false"
+          android:alpha="?android:disabledAlpha"
+          android:color="@color/demoDisabledTextColor" /><!-- Compare using colorPrimaryTextOnLight here, when no default textColorPrimary is set -->
+    <item android:color="@color/colorPrimaryTextOnDark" />
+
+</selector>

@@ -1,0 +1,70 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- This affects default button text look - Comment out to see difference! -->
+        <item name="android:textColorPrimary">@color/colorPrimaryTextOnLight</item>
+
+        <!-- Enable one button style for complete app / Disabled to show-case different states -->
+        <!--<item name="buttonStyle">@style/AppTheme.TextStatedButtonStyle</item>-->
+
+        <!-- Or default one, working when no textColorPrimary is set: -->
+        <!--<item name="buttonStyle">@style/Widget.AppCompat.Button.Colored</item>-->
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+
+    <!-- Default Material style + disabled text color state (To overwrite textColorPrimary) -->
+    <style name="AppTheme.TextStatedButtonStyle" parent="@style/Widget.AppCompat.Button.Colored">
+        <item name="android:textColor">@color/button_text_stated</item>
+    </style>
+
+
+    <!--Default Material style + disabled background state-->
+    <style name="AppTheme.BackgroundStatedButtonStyle" parent="@style/Widget.AppCompat.Button.Colored">
+        <item name="android:backgroundTint">@color/button_accent_stated</item>
+    </style>
+
+    <!--Style with disabled background state and text color -->
+    <style name="AppTheme.CustomButtonStyle" parent="@style/Widget.AppCompat.Button.Colored">
+        <item name="android:backgroundTint">@color/button_accent_stated</item>
+        <!-- Use stated button text color including disabled handling -->
+        <item name="android:textColor">@color/button_text_stated</item>
+    </style>
+
+
+    <!--Theme to switch to different accent color -->
+    <style name="AppTheme.CustomButtonTheme" parent="ThemeOverlay.AppCompat">
+        <!-- Overwriting a value from default theme -->
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Button</item>
+    </style>
+
+    <!--NOTE: Compare when using Style this will not work - overwriting accent needs theme-->
+    <style name="AppTheme.CustomColorButtonStyle" parent="@style/Widget.AppCompat.Button.Colored">
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Button</item>
+    </style>
+
+
+    <!-- Style to provide stated text color -->
+    <style name="AppTheme.TextViewStyle" parent="ThemeOverlay.AppCompat">
+        <!-- Use stated button text color including disabled handling -->
+        <item name="android:textColor">@color/primary_text_stated</item>
+    </style>
+
+
+</resources>
